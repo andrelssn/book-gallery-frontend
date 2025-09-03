@@ -9,12 +9,12 @@ export default function Header() {
     // define qual tab está ativa com base na URL
     const currentPath = location.pathname;
     const tabValue =
-        currentPath === "/" ? 0 : currentPath.startsWith("/livros") ? 1 : 2;
+        currentPath === "/" ? 0 : currentPath.startsWith("/books") ? 1 : 2;
 
     const handleChange = (event, newValue) => {
         if (newValue === 0) navigate("/");
-        if (newValue === 1) navigate("/livros");
-        if (newValue === 2) navigate("/autores");
+        if (newValue === 1) navigate("/books");
+        if (newValue === 2) navigate("/authors");
     };
 
     return (
@@ -29,7 +29,7 @@ export default function Header() {
                 }}
             >
                 <Typography variant="h5" fontWeight="bolder" color="#ffffff" gutterBottom>
-                    📚 Book Gallery
+                    📚 Galeria de Livros
                 </Typography>
 
                 {/* Tabs de navegação */}
@@ -45,7 +45,7 @@ export default function Header() {
                 </Tabs>
             </AppBar>
 
-            {/* Conteúdo dinâmico */}
+            {/* Conteúdo */}
             <Box sx={{ flex: 1 }}>
                 <Outlet />
             </Box>

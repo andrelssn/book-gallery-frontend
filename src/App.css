@@ -13,8 +13,8 @@
     --theme2: #79643F;
     --theme3: #919785;
     --theme4: #82734C;
-    --panel: #F6F6F5;
-    --background: #adadad;
+    --panel: #EDE6D5;      /* bege claro */
+    --background: #C5BFA5; /* marrom suave */
 }
 
 body {

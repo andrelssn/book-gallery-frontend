@@ -22,7 +22,7 @@ export default function Home() {
                 }}
             >
                 <Typography variant="h3" gutterBottom sx={{ color: "var(--theme2)" }}>
-                    Bem-vindo à Book Gallery
+                    Bem-vindo à Galeria de Livros
                 </Typography>
                 <Typography variant="body1" sx={{ mb: 4, color: "var(--theme3)" }}>
                     Explore o mundo da literatura! Aqui você pode visualizar livros,
